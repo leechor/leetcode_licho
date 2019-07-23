@@ -13,6 +13,7 @@ def solution_1124(*args, **kwargs):
             if score - 1 in seen:
                 res = max(res, i - seen[score - 1])
         return res
+
     return longestWPI(*args)
 
 
@@ -53,16 +54,10 @@ def solution_1125(*args, **kwargs):
                     # dp[with_him] = need + [i]
             dp.update(update_dp)
         return dp[(1 << n) - 1]
+
     return smallestSufficientTeam_1125(*args)
 
 
-
 if __name__ == '__main__':
-    # req_skills = ["algorithms", "math", "java", "reactjs", "csharp", "aws"]
-    #     # people = [["algorithms", "math", "java"],
-    #     #           ["algorithms", "math", "reactjs"],
-    #     #           ["java", "csharp", "aws"],
-    #     #           ["reactjs", "csharp"],
-    #     #           ["csharp", "math"],
-    #     #           ["aws", "java"]]
-    pass
+    result = solution_1124([9, 1, 1, 9, 9, 9, 9, 9, 1, ])
+    print(result)

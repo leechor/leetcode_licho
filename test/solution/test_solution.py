@@ -8,6 +8,7 @@ from solution.solutions import solution_1124, solution_1125
                          [
                              pytest.param([9, 9, 6, 0, 6, 6, 9], 3),
                              pytest.param([1, 2, 3, 9, 8, 9, 10, 1, 2, 3], 5),
+                             pytest.param([1, 2, 3, 9, 8, 1, 1, 0, 10, 9, 9, 3], 5),
                              pytest.param([1], 0),
                              pytest.param([9], 1),
                              pytest.param([], 0)
